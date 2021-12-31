@@ -56,13 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Unitilities\Effect\ShowUp.cs" />
-    <Compile Include="Assets\Unitilities\GameObjectPool.cs" />
-    <Compile Include="Assets\Unitilities\MathTool.cs" />
     <Compile Include="Assets\Unitilities\Effect\MaterialChange.cs" />
+    <Compile Include="Assets\Unitilities\Effect\ShowUp.cs" />
+    <Compile Include="Assets\Unitilities\MathTool.cs" />
     <Compile Include="Assets\Unitilities\Effect\ColorChange.cs" />
-    <Compile Include="Assets\Unitilities\Effect\IEffect.cs" />
     <Compile Include="Assets\Unitilities\OperationChain.cs" />
+    <Compile Include="Assets\Unitilities\GameObjectPool.cs" />
+    <Compile Include="Assets\Unitilities\Effect\IEffect.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scenes\StandardShader\HytStandardShader.shader" />
