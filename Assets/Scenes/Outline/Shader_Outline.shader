@@ -4,8 +4,9 @@ Shader "LovelyCatHyt/Outline"
 	{
 		_MainTex("Texture", 2D) = "white" {}
 		_OutlineStrength("Outline Strength", Range(0, 1)) = 0.05
-			// 描边颜色
-			_Color("lineColor",Color) = (1,1,1,1)
+		// 描边颜色
+		_Color("lineColor",Color) = (1,1,1,1)
+		[Toggle(_USE_SMOOTH_NORMAL_ON)] _USE_SMOOTH_NORMAL("Use Smooth Normal", float) = 0
 	}
 	SubShader
 	{
@@ -53,7 +54,7 @@ Shader "LovelyCatHyt/Outline"
 		}
 
 		// ------------------------【描边通道】---------------------------
-		 Pass
+		Pass
 		{
 			Blend SrcAlpha OneMinusSrcAlpha
 			Cull Front
@@ -64,8 +65,8 @@ Shader "LovelyCatHyt/Outline"
 			#pragma vertex vert
 			#pragma fragment frag
 			#include "UnityCG.cginc"
-			#define _USE_SMOOTH_NORMAL_ON 0
-
+			#pragma multi_compile _USE_SMOOTH_NORMAL_ON _
+			
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -87,21 +88,22 @@ Shader "LovelyCatHyt/Outline"
 			{
 				v2f o;
 				//顶点沿着法线方向扩张
-
+				#ifdef _USE_SMOOTH_NORMAL_ON
 				// 使用平滑的法线计算
-				// v.vertex.xyz += normalize(v.tangent.xyz) * _OutlineStrength;       // 为什么用切线?
+				v.vertex.xyz += normalize(v.tangent.xyz) * _OutlineStrength;	// 为什么用切线?
+				#else
 				// 使用自带的法线计算
-				// v.vertex.xyz += normalize(v.normal) * _OutlineStrength * 0.7;   // 0.7 哪来的
-				// 
-				// o.vertex = UnityObjectToClipPos(v.vertex);
+				v.vertex.xyz += normalize(v.normal) * _OutlineStrength * 0.7;   // 0.7 哪来的
+				#endif				
+				 o.vertex = UnityObjectToClipPos(v.vertex);
 
 				// 如果需要使描边线不随Camera距离变大而跟着变小，就需要变换到ndc空间
-				float3 normalDir = normalize(v.normal.xyz);
-				float4 pos = UnityObjectToClipPos(v.vertex);
-				float3 viewNormal = mul((float3x3)UNITY_MATRIX_IT_MV, normalDir);
-				float3 ndcNormal = normalize(TransformViewToProjection(viewNormal.xyz)) * pos.w;//将法线变换到NDC空间
-				pos.xy += _OutlineStrength * ndcNormal.xy;
-				o.vertex = pos;
+				//float3 normalDir = normalize(v.normal.xyz);
+				//float4 pos = UnityObjectToClipPos(v.vertex);
+				//float3 viewNormal = mul((float3x3)UNITY_MATRIX_IT_MV, normalDir);
+				//float3 ndcNormal = normalize(TransformViewToProjection(viewNormal.xyz)) * pos.w;//将法线变换到NDC空间
+				//pos.xy += _OutlineStrength * ndcNormal.xy;
+				//o.vertex = pos;
 			   return o;
 		   }
 		   fixed4 frag(v2f i) : SV_Target
