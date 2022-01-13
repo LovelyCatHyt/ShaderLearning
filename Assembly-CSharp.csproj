@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scenes\StandardShader\HytStandardShader.shader" />
+     <None Include="Assets\Scenes\Outline\Shader_Outline.shader" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files\Unity\2020.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

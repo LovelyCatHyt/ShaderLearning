@@ -1,5 +1,5 @@
 ## 基本效果
-在 [HytStandardShader](HytStandardShader.shader) 中实现了一下效果:
+在 [HytStandardShader](HytStandardShader.shader) 中实现了以下效果:
 - 漫反射
 - 漫反射纹理, 法线纹理, 高光纹理采样(都包含纹理ST参数)
 - 高光反射

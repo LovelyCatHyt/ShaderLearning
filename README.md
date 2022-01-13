@@ -8,6 +8,15 @@ Shader 的学习项目, 用于学习 Shader.
 - [Assets/Scenes](Assets/Scenes) 各个场景, 每个场景是某个主题下的一系列 Shader 的展示
   - [标准Shader](Assets/Scenes/StandardShader/) 构建一个标准的~~最简单的~~光照模型
 
+##  小目标
+
+- [x] 一个比较标准的简单的光照模型
+- [ ] 描边
+  - [x] [WIP] 法线外扩
+  - [ ] 菲涅尔
+
+- [ ] 素描风格渲染
+
 ## 参考资料
 感谢前辈的示例和指导
 
