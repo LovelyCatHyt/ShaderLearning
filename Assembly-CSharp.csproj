@@ -65,6 +65,7 @@
     <Compile Include="Assets\Unitilities\Effect\IEffect.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Scenes\Water\Shader_WaterFlow.shader" />
      <None Include="Assets\Scenes\StandardShader\HytStandardShader.shader" />
      <None Include="Assets\Scenes\Outline\Shader_Outline.shader" />
      <None Include="Assets\Scenes\Sketch\Shader_Sketch.shader" />

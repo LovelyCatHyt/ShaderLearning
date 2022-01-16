@@ -9,6 +9,7 @@ Shader 的学习项目, 用于学习 Shader.
   - [标准Shader](Assets/Scenes/StandardShader/) 构建一个标准的~~最简单的~~光照模型
   - [描边Shader](Assets/Scenes/Outline/) 两种基本的描边实现
   - ~~[素描风Shader](Assets/Scenes/Sketch/) 一个失败的素描风Shader~~
+  - [水波Shader](Assets/Scenes/Water) 比较拉胯但勉强能用的水波渲染
 
 ##  小目标
 
@@ -18,7 +19,7 @@ Shader 的学习项目, 用于学习 Shader.
   - [x] 菲涅尔
 - ~~[Failed] 素描风格渲染~~
 - [ ] 动画系列
-  - [ ] 水波
+  - [x] 水波
   - [ ] 溶解/消散/破裂
 
 ## 参考资料
