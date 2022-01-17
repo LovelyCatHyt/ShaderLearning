@@ -10,6 +10,8 @@ Shader 的学习项目, 用于学习 Shader.
   - [描边Shader](Assets/Scenes/Outline/) 两种基本的描边实现
   - ~~[素描风Shader](Assets/Scenes/Sketch/) 一个失败的素描风Shader~~
   - [水波Shader](Assets/Scenes/Water) 比较拉胯但勉强能用的水波渲染
+  - [溶解Shader](Assets/Scenes/Dissolve/Readme.md) // TODO
+  - [后处理](Assest/sce/../../Assets/Scenes/PostProgress/Readme.md) // TODO
 
 ##  小目标
 
@@ -21,6 +23,9 @@ Shader 的学习项目, 用于学习 Shader.
 - [ ] 动画系列
   - [x] 水波
   - [ ] 溶解/消散/破裂
+- [ ] 后处理
+  - [ ] 画面抖动
+  - [ ] 色散
 
 ## 参考资料
 感谢前辈的示例和指导
