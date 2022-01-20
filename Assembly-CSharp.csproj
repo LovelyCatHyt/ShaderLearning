@@ -56,17 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Unitilities\Effect\MaterialChange.cs" />
-    <Compile Include="Assets\Unitilities\Effect\ShowUp.cs" />
-    <Compile Include="Assets\Unitilities\MathTool.cs" />
-    <Compile Include="Assets\Unitilities\Effect\ColorChange.cs" />
     <Compile Include="Assets\Unitilities\OperationChain.cs" />
     <Compile Include="Assets\Unitilities\GameObjectPool.cs" />
+    <Compile Include="Assets\Unitilities\MathTool.cs" />
     <Compile Include="Assets\Unitilities\Effect\IEffect.cs" />
+    <Compile Include="Assets\Unitilities\Effect\ColorChange.cs" />
+    <Compile Include="Assets\Unitilities\Effect\ShowUp.cs" />
+    <Compile Include="Assets\Unitilities\Effect\MaterialChange.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scenes\Water\Shader_WaterFlow.shader" />
      <None Include="Assets\Scenes\StandardShader\HytStandardShader.shader" />
+     <None Include="Assets\Scenes\Dissolve\Shader_Dissolve.shader" />
      <None Include="Assets\Scenes\Outline\Shader_Outline.shader" />
      <None Include="Assets\Scenes\Sketch\Shader_Sketch.shader" />
      <None Include="Assets\Scenes\Outline\Shader_Outline_Fresnel.shader" />
