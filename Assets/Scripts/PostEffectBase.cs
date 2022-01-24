@@ -7,7 +7,7 @@ namespace CSDJK
     /// 后处理的基类, 可以复用检查 Shader 和创建材质的方法
     /// </summary>
     [ExecuteInEditMode]
-    [RequireComponent(typeof(Camera))]
+    // [RequireComponent(typeof(Camera))]
     public class PostProcessBase : MonoBehaviour
     {
 
