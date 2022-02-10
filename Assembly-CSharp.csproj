@@ -67,6 +67,7 @@
     <Compile Include="Assets\Unitilities\Effect\ShowUp.cs" />
     <Compile Include="Assets\Unitilities\Effect\MaterialChange.cs" />
     <Compile Include="Assets\Scenes\PostProgress\Jitter\Jitter_Mono.cs" />
+    <Compile Include="Assets\Scenes\PostProgress\Dispersion\Dispersion_Mono.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scenes\Water\Shader_WaterFlow.shader" />
@@ -74,6 +75,7 @@
      <None Include="Assets\Scenes\PostProgress\Jitter\Shader_Jitter.shader" />
      <None Include="Assets\Scenes\Dissolve\Shader_Dissolve.shader" />
      <None Include="Assets\Scenes\PostProgress\Grayscale\Shader_Grayscale.shader" />
+     <None Include="Assets\Scenes\PostProgress\Dispersion\Shader_Dispersion.shader" />
      <None Include="Assets\Scenes\Outline\Shader_Outline.shader" />
      <None Include="Assets\Scenes\Sketch\Shader_Sketch.shader" />
      <None Include="Assets\Scenes\Outline\Shader_Outline_Fresnel.shader" />
